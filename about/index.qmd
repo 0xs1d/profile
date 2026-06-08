@@ -2,7 +2,7 @@
 title: About
 ---
 
-# About Bin Yu
+# About Sidharth Gupta
 
 Bin Yu is the Chancellor's Distinguished Professor in the UC Berkeley Departments of Statistics and EECS. She was Chair of the Department of Statistics at UC Berkeley from 2009 to 2012. She is a member of National Academy of Sciences and currently serves on the editorial board of Proceedings of National Academy of Sciences (PNAS).
 
