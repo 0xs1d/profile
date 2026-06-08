@@ -10,7 +10,7 @@ format:
 :::: {.columns}
 
 ::: {.column width="40%"}
-![](images/binyu.jpg)
+![](images/img2.jpg)
 :::
 
 ::: {.column width="60%"}
