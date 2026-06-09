@@ -25,9 +25,9 @@ B.Tech - M.Tech Integrated in Biotech \
 Address: New Delhi, India  
 Phone: (+91) 9150288495  
 Email: sideygupta@gmail.com  
-Linkedin: https:[Linkedin Profile](https://www.linkedin.com/in/netsid/ "Go to Sidharth Linkedin")
-Github: [Github Profile](https://github.com/0xs1d "Go to Sidharth Github")
-Kaggle: [Kaggle Profile](https://www.kaggle.com/s1drtx "Go to Sidharth Kaggle")
+Linkedin: [Linkedin Profile](https://www.linkedin.com/in/netsid/ "Go to Sidharth Linkedin") \
+Github: [Github Profile](https://github.com/0xs1d "Go to Sidharth Github") \
+Kaggle: [Kaggle Profile](https://www.kaggle.com/s1drtx "Go to Sidharth Kaggle") \
 
 :::
 
