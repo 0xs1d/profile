@@ -16,7 +16,7 @@ body, .navbar, .nav, .dropdown-menu, .dropdown-item, .card, .card-body, .card-ti
 }
 
 body {
-  background: #f4ecd8;
+  background: #faf6eb;
 }
 
 /* Hide the page title on the homepage */
@@ -110,40 +110,23 @@ h1, .h1, h2, .h2 {
 /*--------------------------new----------------------*/
 /*--------------------------new----------------------*/
 /*--------------------------new----------------------*/
-/* Strong, visible black dividers for all sections on sepia background */
+/* ================================
+   BLACK DIVIDERS (Quarto-safe)
+   ================================ */
 
-/* 1. Global Rule: Turn on thick black lines under ALL H2 headings across the site */
-h2, .h2 {
-  border-bottom: 3px solid #000000 !important;
-  padding-bottom: 0.5rem !important;
-  margin-bottom: 1.5rem !important;
-  margin-top: 2rem !important;
-}
-
-/* 2. Exception Rule: Turn OFF lines for headings inside your profile column container */
-.columns h2, .column h2, .two-column-container h2 {
-  border-bottom: none !important;
-  padding-bottom: 0 !important;
-  margin-bottom: 1rem !important;
-  margin-top: 0 !important;
-}
-
-/* 3. Force Markdown rules (***) to render as solid black lines */
-hr, .rule, .quarto-hr, .section-rule {
-  border: none !important;
+/* 1) Make all Markdown/Quarto horizontal rules thick, solid black */
+.quarto-body main hr {
+  border: 0 !important;
   height: 3px !important;
-  background-color: #000000 !important;
-  color: #000000 !important;
-  opacity: 1 !important; /* CRITICAL: Cancels out default Bootstrap transparency */
-  margin: 2.5rem 0 !important;
-}
-
-/* 4. Utility divider class for custom placement */
-.divider {
-  display: block !important;
-  height: 3px !important;
-  background-color: #000000 !important;
+  background: #000 !important;
+  margin: 1.5rem 0 !important;
   opacity: 1 !important;
-  margin: 2.5rem 0 !important;
-  width: 100% !important;
+}
+
+/* 2) Optional: a manual divider you can place with <div class="divider"></div> */
+.quarto-body main .divider {
+  height: 3px;
+  background: #000;
+  width: 100%;
+  margin: 1.5rem 0;
 }
