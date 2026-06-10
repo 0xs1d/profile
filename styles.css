@@ -108,25 +108,51 @@ h1, .h1, h2, .h2 {
   font-weight: normal;
 }
 /*--------------------------new----------------------*/
-/* Add visible black dividers between sections on sepia background */
-hr {
-  border: none;
-  border-top: 2px solid #000;
-  height: 0;
-  margin: 2rem 0;
+/* Strong, visible black dividers for all sections on sepia background */
+/* Ensure hr and common Quarto rule elements are solid black */
+hr, .rule, .quarto-hr, .section-rule {
+  border: none !important;
+  height: 3px !important;
+  background-color: #000 !important;
+  margin: 1.5rem 0 !important;
 }
 
-.section:not(:first-child),
-.quarto-section:not(:first-child),
-.page-section:not(:first-child) {
-  border-top: 2px solid #000;
-  padding-top: 1rem;
-  margin-top: 2rem;
+/* Add a solid black top border to every section (except the very first) */
+.page .section:not(:first-of-type),
+.quarto-body .section:not(:first-of-type),
+.section:not(:first-of-type),
+.quarto-section:not(:first-of-type),
+.page-section:not(:first-of-type),
+.main > section:not(:first-of-type) {
+  border-top: 3px solid #000 !important;
+  padding-top: 1rem !important;
+  margin-top: 1.25rem !important;
 }
 
+/* Utility divider class you can insert in content */
 .divider {
-  height: 2px;
+  height: 3px;
   background: #000;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   width: 100%;
+}
+
+/* Slightly increase heading bottom spacing so dividers don't touch text */
+/* Heading dividers: add full-width black bar after main headings */
+.quarto-body h1:not(.title):not(.quarto-title-banner),
+.quarto-body h2,
+.quarto-body h3 {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.quarto-body h1:not(.title):not(.quarto-title-banner)::after,
+.quarto-body h2::after,
+.quarto-body h3::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #000;
+  width: 100%;
+  margin-top: 0.5rem;
 }
